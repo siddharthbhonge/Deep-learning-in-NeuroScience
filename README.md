@@ -20,22 +20,24 @@ Entire code is in python with tensorflow backend.The model is trained on 22 neur
 
 ### Parsing
 
-#####I.Raw Data Format<br />
+I.Raw Data Format<br />
+<br />
 Data was imported as python dictionary using nexfile.py
 The data in .nex file is in the form of list of timestamps of spikes.They can be considered as 1's.<br />
 Flow in read_data.py<br />
 timestamps in sec-> timestamps in msec -> numpy array with 1's only at indexes of these time stamps.<br/>
-
-#####II.Recording Length:
+<br />
+II.Recording Length:
 ![alt text](https://github.com/siddharthbhonge/Deep-learning-in-NeuroScience/blob/master/images/1.png)
 
-
-#####III.Final Arrays:<br/>
+<br />
+III.Final Arrays:<br/>
+<br />
 Input:(22, 3643102)<br />
 Output:(1, 3643102)<br />
-
+<br />
 IV.These arrays were stored in Sparse Matrices.
-
+<br />
 
 
 ### Running the tests
